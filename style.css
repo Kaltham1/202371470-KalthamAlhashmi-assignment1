@@ -13,6 +13,7 @@
 :root{
     --color1: #9bc7fa; 
     --color2: #9bd7fa;
+    --color3: #ebf4fa; 
 }
 
 .header {
@@ -109,6 +110,11 @@ span {
     color: var(--color2);
 }
 
+.kfupm{
+    font-size: 2rem;
+    color:black;
+}
+
 .hcontent h1{
     font-size: 5rem;
     font-weight: 500;
@@ -157,4 +163,65 @@ span {
     color:azure;  
     box-shadow: 0 0 25px var(--color2);
     transform: scale(0.7);
+}
+
+/* Avout Me */
+
+.abt-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--color3);
+    min-height: 80vh;   
+    padding: 100px 8%; 
+}
+.abt-content p:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+.btn1 {
+    color: white;
+    background-color: var(--color2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10%;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.btn1:hover{
+    box-shadow: 0 0 25px var(--color2);
+    transform: scale(0.7);
+}
+.abt-img img{
+  width: 25vw;
+  max-width: 1000px;
+  min-width: 700px;
+  height: auto;
+  box-shadow: 0 0 25px var(--color2);
+  
+}
+.abt-img img:hover{
+    box-shadow: 0 0 25px var(--color2), 0 0 35px var(--color2), 0 0 45px var(--color2)
+}
+
+.h{
+    font-size: 5rem;
+    text-emphasis: center;
+}
+
+.abt-content{
+    padding: 0.3rem;
+}
+
+.abt-content h2{
+    text-align: left;
+    line-height: 1.5;
+}
+.hidden {
+    display: none;
+}
+#read-more {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
 }

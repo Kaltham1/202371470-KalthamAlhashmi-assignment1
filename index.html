@@ -1,51 +1,84 @@
 <!DOCTYPE html>
-<html lang = "en" >
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viwport" content="width=device-width, intial-scale=1.0">
-        <link rel = "stylesheet" href = "style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <title>Kaltham Alhashmi Protofolio</title>
-    </head>
+<html lang="en">
 
-    <body>
-        <header class="header">
-            <a href="#home" class="logo">Kaltham Alhashmi</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viwport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Kaltham Alhashmi Protofolio</title>
+</head>
 
-            <i class="bx bx-menu" id="menu-icon" ></i>
 
-            <nav class="navbar">
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Kaltham Alhashmi</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!--Navigation Bar-->
+        <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="#about">About Me</a>
+            <a href="#abt-me">About Me</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            </nav>
-        </header>
+        </nav>
+    </header>
 
-        <section class="home" id="home">
-            <div class="h-img">
-                <img src="photo/personal.jpg" alt="Prersonal photo" >
-            </div>
+    <!--Home page-->
+    <section class="home" id="home">
+        <div class="h-img">
+            <img src="photo/personal.jpg" alt="Prersonal photo">
+        </div>
 
-            <div class="hcontent">
-                <h3>Hello everyone</h3>
-                <h1>Kaltham Alhashmi</h1>
-                <h3>a <span class="multi-text">SWE Student</span></h3>
-                <p>I'm a software engineering student who enjoys solving problems,</p>
-                <p>exploring new technologies, and turning ideas into simple web experiences.</p>
+        <div class="hcontent">
+            <h3>Hello everyone</h3>
+            <h1>Kaltham Alhashmi</h1>
+            <h3>a <span class="multi-text">SWE Student </span><span class="kfupm">at KFUPM</span></h3>
+            <p>I'm a software engineering student who enjoys solving problems,</p>
+            <p>exploring new technologies, and turning ideas into simple web experiences.</p>
 
+            <div class="media">
                 <div class="media">
-                    <div class="media">
-                        <a href="https://www.linkedin.com/in/kaltham-alhashmi-909a18283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
-                        <a href="https://github.com/Kaltham1" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/kaltham-alhashmi-909a18283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/Kaltham1" target="_blank" rel="noopener"><i
+                            class="bx bxl-github"></i></a>
                 </div>
-                <a href="#" class="btn">Check CV</a>
-
             </div>
+            <a href="#" class="btn">Check CV</a>
+
+        </div>
 
 
-        </section>
+    </section>
 
-    </body>
+    <!--About Me-->
+    <section class="abt-me" id="abt-me"> 
+        <div class="abt-content">
+            <h2 class="h">About <span>Me</span></h2>
+            <p>I'm a software engineering student who enjoys learning new things in and out of my field. Alongside</p>
+            <p>building simple web projects, I sing, paint, create and edit videos, and love trying new adventures.</p>
+        
+            <button id="toggle-btn" class="btn1">Read More</button>
+        </div>
+        
+        <div>
+            <div class="abt-img">
+                <img src="photo/about.png" alt="About Image">
+            </div>
+        </div>
+
+        <p id="read-more" class="hidden">During my school years, I participated in several research projects and summer courses in
+            biomedical science, including topics such as xenotransplantation, pandemics and epidemics, the effect of
+            light colors on plants, and methods to slow down potato rotting. Later, I took part in the Informatics
+            Olympiad with Mawhiba using C++, which is when I realized my interest in programming and decided to pursue a
+            career related to development.</p>
+        
+        
+    </section>
+            
+
+<script src="script.js"></script>
+</body>
+
 </html>
