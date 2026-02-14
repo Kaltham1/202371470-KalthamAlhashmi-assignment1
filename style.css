@@ -225,13 +225,19 @@ span {
 #read-more {
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
-
+/*got help here: the problem was that it was not the case
+ (when the screen shrinks, the image + text stay side-by-side and break the layout.)*/
+@media (max-width: 768px) {
+  .abt-me {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /*Project*/
 .project {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    scroll-margin-top: 500px;
     
 }
 .proj-content h2{
@@ -281,3 +287,43 @@ span {
     margin-top: -40px;
     margin-bottom: 10px;
 }
+
+/* Contact*/
+.contact{
+    background: var(--color3);
+    padding-bottom: 10px;
+    padding-top: 50px;
+   
+}
+
+.contacnt h2{
+    margin-bottom: 3rem;
+    color: var(--color2);
+}
+
+.contact form{
+    max-width: 80rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .text-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .text-box input, .contact form textarea{
+    width: 40%;
+    padding: 2rem;
+    font-size: 2rem;
+    color: black;
+    background: azure;
+    border-radius: 15px;
+    border: 0.3rem solid var(--color2);
+    margin: 1rem ;
+}
+
+
+
+
